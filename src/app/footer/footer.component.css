@@ -1,0 +1,52 @@
+.footer {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    height: 65px;
+    background-image: inherit;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -5px 5px -5px #333;
+  }
+  
+  p {
+    margin-top: 10px;
+    }
+  
+  .fa {
+      padding: 5px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 32px;
+    }
+    
+    .fa:hover {
+        opacity: 0.5;
+    }
+    
+    .fa-facebook {
+      background-color: inherit;
+    }
+  
+    .fa-twitter {
+      background-color: inherit;
+    }
+  
+    .fa-youtube {
+      background-color: inherit;
+    }
+  
+    .fa-github {
+      background-color: color;
+    }
+    

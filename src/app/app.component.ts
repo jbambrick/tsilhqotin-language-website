@@ -1,3 +1,5 @@
+// main heart of your component //
+
 import { Component } from '@angular/core';
 
 @Component({
