@@ -4,12 +4,12 @@
 
 .navbar {
     box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.384);
-    font-size: 25px;
+    display: block;
     color: white;
     padding: 0px;
     background-image: inherit;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px) brightness(75%);
+    backdrop-filter: blur(15px) brightness(75%);
 }
 
 .navbar-toggler {
@@ -24,7 +24,7 @@ a {
   color: white;
   text-decoration: none;
   padding: 1px;
-  display: inline-block;
+  display: block;
   width: 150px;
 }
 
@@ -36,6 +36,7 @@ button {
     font-weight: 500;
     height: 100px;
     width: 120px;
+    font-size: 25px;
 }
 
 button:hover {
