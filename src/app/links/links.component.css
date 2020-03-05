@@ -6,6 +6,7 @@
     background-image: inherit;
     -webkit-backdrop-filter: blur(45px) brightness(55%);
     backdrop-filter: blur(45px) brightness(55%);
+    margin-bottom: 65px;
 }
 
 .content {

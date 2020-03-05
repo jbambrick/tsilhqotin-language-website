@@ -1,0 +1,72 @@
+#linkspage {
+    color: white;
+    position: sticky;
+    font-size: 16px;
+    margin-top: 0px;
+    background-image: inherit;
+    -webkit-backdrop-filter: blur(45px) brightness(55%);
+    backdrop-filter: blur(45px) brightness(55%);
+    margin-bottom: 65px;
+    min-height: 90vh;
+}
+
+.spacer {
+    margin-top: 1000px;
+}
+
+.content {
+    display: inline-block;
+}
+
+#linkspage {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
