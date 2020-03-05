@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppsComponent } from './apps/apps.component';
 import { LinksComponent } from './links/links.component';
+import { SongsComponent } from './songs/songs.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LinksComponent } from './links/links.component';
     ContactComponent,
     FooterComponent,
     AppsComponent,
-    LinksComponent
+    LinksComponent,
+    SongsComponent
   ],
   imports: [
     BrowserModule,
