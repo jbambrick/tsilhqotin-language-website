@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppsComponent } from './apps/apps.component';
 import { LinksComponent } from './links/links.component';
 import { SongsComponent } from './songs/songs.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SongsComponent } from './songs/songs.component';
     FooterComponent,
     AppsComponent,
     LinksComponent,
-    SongsComponent
+    SongsComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
