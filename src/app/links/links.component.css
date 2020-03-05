@@ -9,6 +9,10 @@
     margin-bottom: 65px;
 }
 
+p {
+  margin-left: 50px;
+}
+
 .content {
     display: inline-block;
 }
