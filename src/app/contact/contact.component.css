@@ -10,8 +10,12 @@
     min-height: 90vh;
 }
 
-p {
+p, h4 {
     margin-left: 50px;
+}
+
+li {
+  list-style-type: none;
 }
 
 .content {
