@@ -5,3 +5,14 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#linkspage {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    padding-bottom: 35px;
+}

@@ -8,8 +8,8 @@
     color: white;
     padding: 0px;
     background-image: inherit;
-    -webkit-backdrop-filter: blur(15px) brightness(75%);
-    backdrop-filter: blur(15px) brightness(75%);
+    -webkit-backdrop-filter: blur(15px) brightness(65%);
+    backdrop-filter: blur(15px) brightness(65%);
 }
 
 .navbar-toggler {
