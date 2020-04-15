@@ -14,6 +14,7 @@ import { LinksComponent } from './links/links.component';
 import { SongsComponent } from './songs/songs.component';
 import { VideosComponent } from './videos/videos.component';
 import { FundersComponent } from './funders/funders.component';
+import { RadioplayerComponent } from './radioplayer/radioplayer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FundersComponent } from './funders/funders.component';
     LinksComponent,
     SongsComponent,
     VideosComponent,
-    FundersComponent
+    FundersComponent,
+    RadioplayerComponent
   ],
   imports: [
     BrowserModule,
