@@ -7,11 +7,19 @@ body {
 }
 
 #linkspage {
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+  position: relative;
+  color: white;
+  font-size: 16px;
+  margin-top: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-image: inherit;
+  -webkit-backdrop-filter: blur(45px) brightness(55%);
+  backdrop-filter: blur(45px) brightness(55%);
+  margin-bottom: 65px;
+  min-height: 90vh;
 }
+
 
 h1 {
     padding-bottom: 35px;
