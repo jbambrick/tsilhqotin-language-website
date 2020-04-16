@@ -12,6 +12,10 @@
     min-height: 90vh;
 }
 
+.logo {
+  text-align: center;
+}
+
 li {
   list-style-type: none;
 }
