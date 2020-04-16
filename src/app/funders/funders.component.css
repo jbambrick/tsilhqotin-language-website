@@ -8,6 +8,8 @@
     backdrop-filter: blur(45px) brightness(55%);
     margin-bottom: 65px;
     min-height: 90vh;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 p {
