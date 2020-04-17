@@ -7,7 +7,7 @@
     display: block;
     color: white;
     padding: 0px;
-    background-image: inherit;
+    background-color: rgba(4, 4, 100, 0.301);
     -webkit-backdrop-filter: blur(15px) brightness(65%);
     backdrop-filter: blur(15px) brightness(65%);
 }
