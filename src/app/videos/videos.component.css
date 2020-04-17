@@ -10,8 +10,6 @@ li {
     display: inline-block;
 }
 
-
-
 .glow {
   color: #fff;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
