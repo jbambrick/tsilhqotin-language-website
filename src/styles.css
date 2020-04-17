@@ -6,6 +6,10 @@ body {
     background-size: cover;
 }
 
+p {
+  margin-left: 50px;
+}
+
 #linkspage {
   position: relative;
   color: white;
