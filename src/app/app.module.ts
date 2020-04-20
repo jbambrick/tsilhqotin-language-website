@@ -14,6 +14,7 @@ import { LinksComponent } from './links/links.component';
 import { SongsComponent } from './songs/songs.component';
 import { VideosComponent } from './videos/videos.component';
 import { FundersComponent } from './funders/funders.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FundersComponent } from './funders/funders.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
