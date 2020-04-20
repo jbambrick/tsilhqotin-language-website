@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ObDataService } from '../services/ob-data.service';
 
 @Component({
   selector: 'app-songs',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class SongsComponent implements OnInit {
   obDownloadURL: string = "https://datsan.openbroadcaster.pro/download.php?media_id=";
 
-  data: any[] = [
+  public songs: any[]= []; /* = [
     { // SONG
     "title": "ʔEsgul Beŝ",
     "performer": "Bella Alphonse",
@@ -89,7 +90,7 @@ export class SongsComponent implements OnInit {
     "url": `${this.obDownloadURL}130`,
     "lyrics": ""
   },
-/*
+
   { // SONG
     "title": "Yedanx Shen",
     "performer": "Peyal Laceese",
@@ -97,7 +98,7 @@ export class SongsComponent implements OnInit {
     "transcriber": "No transcript.",
     "url": `${this.obDownloadURL}579`,
     "lyrics": ""
-  }, */
+  }
 
   { // SONG
     "title": "Yaŝalhtɨg",
@@ -133,13 +134,20 @@ export class SongsComponent implements OnInit {
     "transcriber": "",
     "url": `${this.obDownloadURL}517`,
     "lyrics": ""
-  }
+  } 
 
-];
+]; */
 
-  constructor() { }
+  constructor(private obdata: ObDataService) { }
 
   ngOnInit() {
+    this.obdata.getAllKidsSongs().subscribe((data: any)=>{
+      console.log(data);
+      this.songs.push({
+        "title": data.media[0].title,
+        "performer": data.media[0].artist
+      });
+    });
   }
 
 }
