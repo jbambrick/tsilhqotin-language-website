@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { StaffComponent } from './staff/staff.component';
 import { DialectComponent } from './dialect/dialect.component';
 import { TeachersComponent } from './teachers/teachers.component';
 import { ContactComponent } from './contact/contact.component';
@@ -21,7 +20,6 @@ import { FundersComponent } from './funders/funders.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    StaffComponent,
     DialectComponent,
     TeachersComponent,
     ContactComponent,
