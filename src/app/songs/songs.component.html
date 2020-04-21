@@ -3,20 +3,12 @@
       <tr>
         <th scope="col">Title</th>
         <th scope="col">Performed by</th>
-        <th scope="col">Translated by</th>
-        <th scope="col">Transcribed by</th>
       </tr>
     </thead>
     <tbody>
         <tr *ngFor="let song of songs">
             <td>{{ song.title }}</td>
             <td>{{ song.performer }}</td>
-            <td>{{ song.translator }}</td>
-            <td>{{ song.transcriber }}</td>
-            <td> <audio controls>
-                    <source src="{{ song.url }}">
-                    Not Supported.
-                </audio> </td>
         </tr>
     </tbody>
   </table>
