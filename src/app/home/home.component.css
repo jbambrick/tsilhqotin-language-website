@@ -7,7 +7,7 @@
     backdrop-filter: blur(5px) brightness(60%);
     width: fit-content;
     height: fit-content;
-    border-style: double;
+    border-style: none;
     color: ivory;
     border-radius: 18px;
     text-align: center;
