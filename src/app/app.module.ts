@@ -16,6 +16,8 @@ import { VideosComponent } from './videos/videos.component';
 import { FundersComponent } from './funders/funders.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SongDetailComponent } from './song-detail/song-detail.component';
+import { PlyrModule } from 'ngx-plyr';
+import { PlyrComponent } from './plyr/plyr.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { SongDetailComponent } from './song-detail/song-detail.component';
     SongsComponent,
     VideosComponent,
     FundersComponent,
-    SongDetailComponent
+    SongDetailComponent,
+    PlyrComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    PlyrModule
   ],
   providers: [],
   bootstrap: [AppComponent]

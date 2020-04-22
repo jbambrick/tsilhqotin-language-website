@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ɵPlayer } from '@angular/core';
 import { ObDataService } from '../services/ob-data.service';
+import { PlyrComponent } from 'ngx-plyr';
+import * as Plyr from 'plyr';
 
 @Component({
   selector: 'app-song-detail',
@@ -7,6 +9,18 @@ import { ObDataService } from '../services/ob-data.service';
   styleUrls: ['./song-detail.component.css']
 })
 export class SongDetailComponent implements OnInit {
+    // get the component instance to have access to plyr instance
+    @ViewChild(PlyrComponent, { static: true })
+    plyr: PlyrComponent;
+
+    player: Plyr;
+
+    private audioSources = [{
+      src: "https://datsan.openbroadcaster.pro/download.php?media_id=126",
+      type: "audio/mp3"
+    }
+    ];
+
   obDownloadURL: string = "https://datsan.openbroadcaster.pro/";
   public song: any = {};
   public songID: string = "127"; // use magic number temporarily as we scaffold
@@ -35,12 +49,35 @@ export class SongDetailComponent implements OnInit {
         return reformattedMediaArray;
       });
       this.song = songs[0];
-      this.audioPlayer.src = this.song.url;
+      this.audioSources.push({
+        "src": this.song.url,
+        "type": "audio/mp3"
+      })
     });
   }
 
   public playAudio(){
     this.audioPlayer.play();
   }
+
+
+
+
+  played(event: Plyr.PlyrEvent) {
+    console.log('played', event);
+  }
+
+  play(): void {
+    this.player.play(); // or this.plyr.player.play()
+  }
+
+  pause(): void {
+    this.player.pause(); // or this.plyr.player.play()
+  }
+
+  stop(): void {
+    this.player.stop(); // or this.plyr.player.stop()
+  }
+
 
 }
