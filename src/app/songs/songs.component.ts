@@ -22,7 +22,8 @@ export class SongsComponent implements OnInit {
           "title": mediaItem.title,
           "performer": mediaItem.artist,
           "url": `${this.obDownloadURL}${mediaItem.download}`,
-          "comments": mediaItem.comments
+          "comments": mediaItem.comments,
+          "id": mediaItem.id
         }
         return reformattedMediaArray;
       })

@@ -22,9 +22,4 @@ export class ObDataService {
     return this.http.get(url);
   }
 
-  public getMediaItemByID(id: number){
-    let url: string = `${this.openBroadcasterDownloadURL}?media_id=${id}`;
-    console.log(`GET: ${url}`);
-    return this.http.get(url);
-  }
 }
