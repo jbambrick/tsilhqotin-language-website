@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: 'apps', component: AppsComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'funders', component: FundersComponent},
-  {path: 'song', component: SongDetailComponent}
+  {path: 'song/:id', component: SongDetailComponent}
 ];
 
 @NgModule({

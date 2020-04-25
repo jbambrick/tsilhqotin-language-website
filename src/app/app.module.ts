@@ -17,7 +17,6 @@ import { FundersComponent } from './funders/funders.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SongDetailComponent } from './song-detail/song-detail.component';
 import { PlyrModule } from 'ngx-plyr';
-import { PlyrComponent } from './plyr/plyr.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +32,7 @@ import { PlyrComponent } from './plyr/plyr.component';
     SongsComponent,
     VideosComponent,
     FundersComponent,
-    SongDetailComponent,
-    PlyrComponent
+    SongDetailComponent
   ],
   imports: [
     BrowserModule,
