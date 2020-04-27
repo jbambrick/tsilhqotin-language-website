@@ -42,13 +42,7 @@ export class SongDetailComponent implements OnInit {
         console.log(`${this.obDownloadURL}${mediaItem.download}`);
         console.log(reformattedMediaJSON.title);
         return reformattedMediaJSON;
-      })) /*
-      .pipe(filter( (item: any)=>{
-        console.log(`Song id: ${this.songID}`);
-        console.log(item.id === this.songID);
-        // console.log(`item.id: _${data.media.item.id}_ , songID- _${this.songID}_, same- ${data.media.item.id === this.songID}`);
-        return (item.id === this.songID);
-      })) */
+      })) 
       .subscribe((data:any)=>{
         this.song = data;
         console.log(`returned data: ${data.url}`);
@@ -56,7 +50,10 @@ export class SongDetailComponent implements OnInit {
           "src": this.song.url,
           "type": "audio/mp3"
         });
-        this.plyr.plyrSources = this.audioSources;
+        this.plyr.plyrSources = [{
+          "src": 'https://datsan.openbroadcaster.pro/download.php?media_id=126',
+          "type": "audio/mp3"
+        }];//this.audioSources;
       });
     
   }
