@@ -7,7 +7,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let song of songs">
-            <td>{{ song.title }}</td>
+            <td><a [routerLink]="['/song', song.id]" class="btn btn-primary btn-lg">{{ song.title }}</a></td>
             <td>{{ song.performer }}</td>
         </tr>
     </tbody>
