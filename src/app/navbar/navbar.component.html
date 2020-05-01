@@ -10,14 +10,26 @@
           <a class="nav-link" routerLink="/"><button class="w3-btn w3-black">Home</button></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/songs"><button class="w3-btn w3-black">
+          <a class="nav-link" routerLink="/songs"><button type="button" class="">
             <h5 style="font-size: 23px;">Tŝilhqot’in Radio 104.5 FM</h5>
           </button>
         </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/videos"><button class="w3-btn w3-black">Videos</button></a>
-        </li>
+     
+        <div class="container">
+          <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+              Videos
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" routerLink="/songs" style="color: black">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+        
+        
         <li class="nav-item">
           <a class="nav-link"  routerLink="/teachers"><button class="w3-btn w3-black">Teachers</button></a>
         </li>
