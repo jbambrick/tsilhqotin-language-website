@@ -10,8 +10,11 @@ import { DialectComponent } from './dialect/dialect.component';
 import { AppsComponent } from './apps/apps.component';
 import { ContactComponent } from './contact/contact.component';
 import { FundersComponent } from './funders/funders.component';
+<<<<<<< HEAD
 import { SongDetailComponent } from './song-detail/song-detail.component';
+=======
 import { RadioplayerComponent } from './radioplayer/radioplayer.component';
+>>>>>>> master
 
 
 const routes: Routes = [
@@ -24,8 +27,11 @@ const routes: Routes = [
   {path: 'apps', component: AppsComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'funders', component: FundersComponent},
-  {path: 'song/:id', component: SongDetailComponent},
+<<<<<<< HEAD
+  {path: 'song/:id', component: SongDetailComponent}
+=======
   {path: 'radioplayer', component: RadioplayerComponent},
+>>>>>>> master
 ];
 
 @NgModule({

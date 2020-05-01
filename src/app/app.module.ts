@@ -11,12 +11,14 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppsComponent } from './apps/apps.component';
 import { LinksComponent } from './links/links.component';
-import { SongsComponent } from './songs/songs.component';
+import { RadioComponent } from './radio/radio.component';
 import { VideosComponent } from './videos/videos.component';
 import { FundersComponent } from './funders/funders.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SongDetailComponent } from './song-detail/song-detail.component';
 import { PlyrModule } from 'ngx-plyr';
+import { RadioplayerComponent } from './radioplayer/radioplayer.component';
+
 
 @NgModule({
   declarations: [
@@ -29,10 +31,10 @@ import { PlyrModule } from 'ngx-plyr';
     FooterComponent,
     AppsComponent,
     LinksComponent,
-    SongsComponent,
+    RadioComponent,
     VideosComponent,
     FundersComponent,
-    SongDetailComponent
+    RadioplayerComponent
   ],
   imports: [
     BrowserModule,

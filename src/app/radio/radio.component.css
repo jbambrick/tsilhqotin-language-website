@@ -1,17 +1,9 @@
-#linkspage {
-    position: relative;
-    color: white;
-    font-size: 16px;
-    margin-top: 0px;
-    background-image: inherit;
-    -webkit-backdrop-filter: blur(45px) brightness(55%);
-    backdrop-filter: blur(45px) brightness(55%);
-    margin-bottom: 65px;
-    min-height: 90vh;
+.logo {
+  text-align: center;
 }
 
-p, h4 {
-    margin-left: 50px;
+#btn {
+  border-radius: 15px;
 }
 
 li {
