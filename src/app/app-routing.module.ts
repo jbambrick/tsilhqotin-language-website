@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { SongsComponent } from './songs/songs.component';
+import { RadioComponent } from './radio/radio.component';
 import { VideosComponent } from './videos/videos.component';
 import { TeachersComponent } from './teachers/teachers.component';
 import { LinksComponent } from './links/links.component';
@@ -15,7 +15,7 @@ import { RadioplayerComponent } from './radioplayer/radioplayer.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'songs', component: SongsComponent},
+  {path: 'radio', component: RadioComponent},
   {path: 'videos', component: VideosComponent},
   {path: 'teachers', component: TeachersComponent},
   {path: 'links', component: LinksComponent},
