@@ -14,7 +14,11 @@ import { LinksComponent } from './links/links.component';
 import { RadioComponent } from './radio/radio.component';
 import { VideosComponent } from './videos/videos.component';
 import { FundersComponent } from './funders/funders.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SongDetailComponent } from './song-detail/song-detail.component';
+import { PlyrModule } from 'ngx-plyr';
 import { RadioplayerComponent } from './radioplayer/radioplayer.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +38,9 @@ import { RadioplayerComponent } from './radioplayer/radioplayer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    PlyrModule
   ],
   providers: [],
   bootstrap: [AppComponent]

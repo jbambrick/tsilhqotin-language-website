@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Performed by</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let song of songs">
+            <td><a [routerLink]="['/song', song.id]" class="btn btn-primary btn-lg">{{ song.title }}</a></td>
+            <td>{{ song.performer }}</td>
+        </tr>
+    </tbody>
+  </table>
