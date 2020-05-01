@@ -31,14 +31,15 @@ export class SongDetailComponent implements OnInit {
         console.log(`Searching for one song by id: ${this.songID}`);
         return this.obdata.getKidsSongByID(this.songID);
       })).subscribe((data: any)=>{
-        let mediaItem = data;
+        let mediaItem = data[0];
         let reformattedMediaJSON: any;
         reformattedMediaJSON = {
-          "title": mediaItem[0].title,
-          "performer": mediaItem[0].artist,
-          "url": `${this.obDownloadURL}${mediaItem[0].download}`,
-          "comments": mediaItem[0].comments,
-          "id": mediaItem[0].id
+          "title": mediaItem.title,
+          "performer": mediaItem.artist,
+          "url": `${this.obDownloadURL}${mediaItem.download}`,
+          "comments": mediaItem.comments,
+          "id": mediaItem.id,
+          "lyrics": mediaItem.metadata_transcript
         };
         this.song = reformattedMediaJSON;
         this.audioSources.push({
