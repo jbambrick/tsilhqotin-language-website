@@ -34,7 +34,8 @@ import { RadioplayerComponent } from './radioplayer/radioplayer.component';
     RadioComponent,
     VideosComponent,
     FundersComponent,
-    RadioplayerComponent
+    RadioplayerComponent,
+    SongDetailComponent
   ],
   imports: [
     BrowserModule,
