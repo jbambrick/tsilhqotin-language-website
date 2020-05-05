@@ -9,9 +9,9 @@
       </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let song of songs">
-            <td><a [routerLink]="['/song', song.id]" class="btn btn-primary btn-lg">{{ song.title }}</a></td>
-            <td>{{ song.performer }}</td>
+        <tr *ngFor="let video of videos">
+            <td><a [routerLink]="['/video', video.id]" class="btn btn-primary btn-lg">{{ video.title }}</a></td>
+            <td>{{ video.performer }}</td>
         </tr>
     </tbody>
   </table>

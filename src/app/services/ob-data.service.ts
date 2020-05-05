@@ -12,13 +12,14 @@ export class ObDataService {
   openBroadcasterDownloadURL: string = `${this.openBrodcasterURL}tools/download.php`;
 
   private genre: object = {
-    "Kids' Songs":3207
+    "kids-songs":3207,
+    "public-videos": 3209
   }
 
   constructor(private http: HttpClient) { }
 
   public getAllKidsSongs(){
-    let url: string = `${this.openBroadcasterAPIURL}?genre_id=${this.genre["Kids' Songs"]}`;
+    let url: string = `${this.openBroadcasterAPIURL}?genre_id=${this.genre["kids-songs"]}`;
     console.log(`GET: ${url}`);
     return this.http.get(url);
   }
@@ -28,7 +29,21 @@ export class ObDataService {
       return data.media.filter((item: any)=>{
         return item.id === id;
       });
-    }))
+    }));
+  }
+
+  public getAllVideos(){
+    let url: string = `${this.openBroadcasterAPIURL}?genre_id=${this.genre["public-videos"]}`;
+    console.log(`GET: ${url}`);
+    return this.http.get(url);
+  }
+
+  public getVideoByID(id: string){
+    return this.getAllVideos().pipe(map((data:any)=>{
+      return data.media.filter((item: any)=>{
+        return item.id === id;
+      });
+    }));
   }
 
 }

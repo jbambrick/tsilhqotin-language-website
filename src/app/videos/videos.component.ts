@@ -9,14 +9,14 @@ import { ObDataService } from '../services/ob-data.service';
 export class VideosComponent implements OnInit {
   obDownloadURL: string = "https://datsan.openbroadcaster.pro/";
   //
-    public songs: any[]= []; 
+    public videos: any[]= []; 
   
     constructor(private obdata: ObDataService) { }
   
     ngOnInit() {
-      this.obdata.getAllKidsSongs().subscribe((data: any)=>{
+      this.obdata.getAllVideos().subscribe((data: any)=>{
         console.log(data);
-        this.songs = data.media.map((mediaItem: any)=>{
+        this.videos = data.media.map((mediaItem: any)=>{
           let reformattedMediaArray: any;
           reformattedMediaArray = {
             "title": mediaItem.title,
