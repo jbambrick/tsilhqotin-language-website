@@ -1,6 +1,19 @@
 <div class="container" id="linkspage" style="align-items: center;">
     <div id="content">
-    <h1 style="text-align: center;">VIDEOS</h1>
-    <p class="glow" style="font-size: 50px; text-align: center; margin-top: 200px;">CONTENT COMING SOON!</p>
+        <h1 style="text-align: center;">VIDEOS</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Performed by</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let song of songs">
+            <td><a [routerLink]="['/song', song.id]" class="btn btn-primary btn-lg">{{ song.title }}</a></td>
+            <td>{{ song.performer }}</td>
+        </tr>
+    </tbody>
+  </table>
 </div>
 </div>
