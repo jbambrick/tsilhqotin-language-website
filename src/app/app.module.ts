@@ -19,6 +19,7 @@ import { SongsComponent } from './songs/songs.component'
 import { SongDetailComponent } from './song-detail/song-detail.component';
 import { PlyrModule } from 'ngx-plyr';
 import { RadioplayerComponent } from './radioplayer/radioplayer.component';
+import { VideoDetailComponent } from './video-detail/video-detail.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { RadioplayerComponent } from './radioplayer/radioplayer.component';
     FundersComponent,
     RadioplayerComponent,
     SongsComponent,
-    SongDetailComponent
+    SongDetailComponent,
+    VideoDetailComponent
   ],
   imports: [
     BrowserModule,

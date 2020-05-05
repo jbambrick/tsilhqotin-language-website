@@ -13,12 +13,12 @@ import { FundersComponent } from './funders/funders.component';
 import { SongDetailComponent } from './song-detail/song-detail.component';
 import { RadioplayerComponent } from './radioplayer/radioplayer.component';
 import { SongsComponent } from './songs/songs.component';
+import { VideoDetailComponent } from './video-detail/video-detail.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'radio', component: RadioComponent},
-  {path: 'videos', component: VideosComponent},
   {path: 'teachers', component: TeachersComponent},
   {path: 'links', component: LinksComponent},
   {path: 'dialect', component: DialectComponent},
@@ -27,6 +27,8 @@ const routes: Routes = [
   {path: 'funders', component: FundersComponent},
   {path: 'songs', component: SongsComponent },
   {path: 'song/:id', component: SongDetailComponent},
+  {path: 'video/:id', component: VideoDetailComponent},
+  {path: 'videos', component: VideosComponent},
   {path: 'radioplayer', component: RadioplayerComponent},
 ];
 
