@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FundersComponent } from './funders/funders.component';
 import { SongDetailComponent } from './song-detail/song-detail.component';
 import { RadioplayerComponent } from './radioplayer/radioplayer.component';
+import { SongsComponent } from './songs/songs.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'apps', component: AppsComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'funders', component: FundersComponent},
+  {path: 'songs', component: SongsComponent },
   {path: 'song/:id', component: SongDetailComponent},
   {path: 'radioplayer', component: RadioplayerComponent},
 ];

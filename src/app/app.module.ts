@@ -15,6 +15,7 @@ import { RadioComponent } from './radio/radio.component';
 import { VideosComponent } from './videos/videos.component';
 import { FundersComponent } from './funders/funders.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SongsComponent } from './songs/songs.component'
 import { SongDetailComponent } from './song-detail/song-detail.component';
 import { PlyrModule } from 'ngx-plyr';
 import { RadioplayerComponent } from './radioplayer/radioplayer.component';
@@ -35,6 +36,7 @@ import { RadioplayerComponent } from './radioplayer/radioplayer.component';
     VideosComponent,
     FundersComponent,
     RadioplayerComponent,
+    SongsComponent,
     SongDetailComponent
   ],
   imports: [
