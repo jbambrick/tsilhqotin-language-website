@@ -10,6 +10,8 @@
     background-color: rgba(4, 4, 100, 0.301);
     -webkit-backdrop-filter: blur(15px) brightness(65%);
     backdrop-filter: blur(15px) brightness(65%);
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-toggler {
