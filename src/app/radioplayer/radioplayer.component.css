@@ -1,5 +1,29 @@
-* {
-    background: white;
-}
+  h1 {
+    color: white;
+    margin-left: 450px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   h2 {
+     font-family: inherit;
+     margin: 0;
+     color: red;
+     font-weight: 500;
+     padding-left: 10px;
+   }
 
+   .player {
+    width: 320px;
+    box-shadow: 5px 5px 7px black;
+    border-radius: 5px;
+    position: static;
+    max-width: 370px;
+    flex-direction: column;
+    float: right;
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+   }
 

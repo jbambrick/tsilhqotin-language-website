@@ -1,0 +1,8 @@
+<div class="container">
+    <div id="content">
+        <h1>{{ video.title }}</h1>
+        <h2>performed by {{ video.performer }}</h2>
+        <div plyr style="width: 300px" plyrTitle="Video" plyrType="video" [plyrPlaysInline]="true" [plyrCrossOrigin]="true" [plyrSources]="videoSources"></div>
+        <p>{{ video.lyrics }}</p>
+    </div>
+</div>

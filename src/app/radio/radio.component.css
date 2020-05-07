@@ -1,17 +1,23 @@
+.logo {
+  text-align: center;
+}
+
+#btn {
+  border-radius: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
 .content {
     display: inline-block;
-    background-color: rgba(4, 4, 100, 0.301);
-    -webkit-backdrop-filter: blur(1px) brightness(55%);
-    backdrop-filter: blur(1px) brightness(55%);
-} 
+}
 
 ul.p {
   list-style-type: circle;
 }
 
-li {
-  margin-left: 40px;
-}
 
 .glow {
   color: #fff;

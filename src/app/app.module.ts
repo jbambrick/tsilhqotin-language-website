@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,10 +12,16 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppsComponent } from './apps/apps.component';
 import { LinksComponent } from './links/links.component';
-import { SongsComponent } from './songs/songs.component';
+import { RadioComponent } from './radio/radio.component';
 import { VideosComponent } from './videos/videos.component';
 import { FundersComponent } from './funders/funders.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SongsComponent } from './songs/songs.component'
+import { SongDetailComponent } from './song-detail/song-detail.component';
+import { PlyrModule } from 'ngx-plyr';
 import { RadioplayerComponent } from './radioplayer/radioplayer.component';
+import { VideoDetailComponent } from './video-detail/video-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -27,14 +34,20 @@ import { RadioplayerComponent } from './radioplayer/radioplayer.component';
     FooterComponent,
     AppsComponent,
     LinksComponent,
-    SongsComponent,
+    RadioComponent,
     VideosComponent,
     FundersComponent,
-    RadioplayerComponent
+    RadioplayerComponent,
+    SongsComponent,
+    SongDetailComponent,
+    VideoDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    PlyrModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

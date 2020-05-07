@@ -1,42 +1,45 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-inherit sticky-top" role="banner">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="\assets\TNG-logo-Colour.png" style="height: 100px;"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto" style="align-items: center; width: auto;">
  
         <li class="nav-item">
-          <a class="nav-link" routerLink="/songs"><button class="w3-btn w3-black">
+          <a class="nav-link" routerLink="/radio"><button class="w3-btn w3-black">
             <h5 style="font-size: 23px;">Tŝilhqot’in Radio 104.5 FM</h5>
           </button>
         </a>
         </li>
-     
-          <div class="dropdown">
-            <button type="button" class="button dropdown-toggle" data-toggle="dropdown">
-              More
-            </button>
-            <div class="dropdown-menu" style="background-color: white;">
-              <a class="dropdown-item" routerLink="/videos" >Videos</a>
-              <a class="dropdown-item" routerLink="/teachers" >Teachers</a>
-              <a class="dropdown-item" routerLink="/apps" >Apps</a>
-              <a class="dropdown-item" routerLink="/dialect">Dialect</a>
-              <a class="dropdown-item" routerLink="/links">Links</a>
-            </div>
-          </div>
-  
+
         <li class="nav-item">
           <a class="nav-link"  routerLink="/dialect"><button class="w3-btn w3-black">Dialect</button></a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link"  routerLink="/funders"><button class="w3-btn w3-black">Funders</button></a>
+          <a routerLink="/songs"><button class="w3-btn w3-black">Songs</button></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  routerLink="/contact"><button class="w3-btn w3-black">Contact</button></a>
+          <a routerLink="/videos"><button class="w3-btn w3-black">Videos</button></a>
         </li>
+        <li class="nav-item">
+          <a routerLink="/apps"><button class="w3-btn w3-black">Apps</button></a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/links"><button class="w3-btn w3-black">Links</button></a>
+        </li>
+     
+          <div class="dropdown">
+            <button type="button" class="button dropdown-toggle" (click)="toggleDropdown()">
+              More
+            </button>
+            <div [ngbCollapse]="isDropdownCollapsed" class="dropdown-menu" style="background-color: white;">
+              <a class="dropdown-item" routerLink="/teachers">Teachers</a>
+              <a class="dropdown-item"  routerLink="/funders">Funders</a>
+              <a class="dropdown-item"  routerLink="/contact">Contact</a>
+            </div>
+          </div>
       </ul>
     </div>
   </div>
