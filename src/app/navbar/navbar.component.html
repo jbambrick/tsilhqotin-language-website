@@ -14,19 +14,19 @@
         </a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item" (click)="navbarItemClick()">
           <a class="nav-link"  routerLink="/dialect"><button class="w3-btn w3-black">Dialect</button></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="navbarItemClick()">
           <a routerLink="/songs"><button class="w3-btn w3-black">Songs</button></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="navbarItemClick()">
           <a routerLink="/videos"><button class="w3-btn w3-black">Videos</button></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="navbarItemClick()">
           <a routerLink="/apps"><button class="w3-btn w3-black">Apps</button></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="navbarItemClick()">
           <a routerLink="/links"><button class="w3-btn w3-black">Links</button></a>
         </li>
      
@@ -35,9 +35,9 @@
               More
             </button>
             <div [ngbCollapse]="isDropdownCollapsed" class="dropdown-menu" style="background-color: white;">
-              <a class="dropdown-item" routerLink="/teachers">Teachers</a>
-              <a class="dropdown-item"  routerLink="/funders">Funders</a>
-              <a class="dropdown-item"  routerLink="/contact">Contact</a>
+              <a class="dropdown-item" routerLink="/teachers" (click)="dropdownItemClick()">Teachers</a>
+              <a class="dropdown-item"  routerLink="/funders" (click)="dropdownItemClick()">Funders</a>
+              <a class="dropdown-item"  routerLink="/contact" (click)="dropdownItemClick()">Contact</a>
             </div>
           </div>
       </ul>

@@ -24,4 +24,15 @@ export class NavbarComponent implements OnInit {
   public toggleDropdown(){
     this.isDropdownCollapsed = !this.isDropdownCollapsed;
   }
+
+  public navbarItemClick(){
+    console.log(`Navbar item clicked`);
+    this.isMenuCollapsed = true;
+  }
+
+  public dropdownItemClick(){
+    console.log(`Dropdown item clicked`);
+    this.navbarItemClick();
+    this.isDropdownCollapsed = true;
+  }
 }
