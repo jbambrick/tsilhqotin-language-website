@@ -9,7 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export class NavbarComponent implements OnInit {
 
-  isMenuCollapsed: boolean = true; // collapsed initially
+  isMenuCollapsed: boolean = true; // Haburger menu collapsed initially
+  isDropdownCollapsed: boolean = true; // 'More' dropdown collapsed initially
 
   constructor() { }
 
@@ -20,4 +21,7 @@ export class NavbarComponent implements OnInit {
     this.isMenuCollapsed = !this.isMenuCollapsed;
   }
 
+  public toggleDropdown(){
+    this.isDropdownCollapsed = !this.isDropdownCollapsed;
+  }
 }

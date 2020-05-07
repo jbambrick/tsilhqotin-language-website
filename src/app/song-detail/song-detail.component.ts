@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ɵPlayer } from '@angular/core';
 import { ObDataService } from '../services/ob-data.service';
 import { PlyrComponent } from 'ngx-plyr';
 import * as Plyr from 'plyr';
-import { ActivatedRoute, Router, NavigationExtras } from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
 import { map, switchMap, filter } from 'rxjs/operators';
 import { Observable, ObservableInput } from 'rxjs';
 
@@ -23,7 +23,7 @@ export class SongDetailComponent implements OnInit {
   public song: any = {};
   public songID: string = ""; // use magic number temporarily as we scaffold
 
-  constructor(private obdata: ObDataService, private route: ActivatedRoute, private router: Router) { 
+  constructor(private obdata: ObDataService, private route: ActivatedRoute) { 
     this.route.params
       .pipe(map(params => params['id'])) 
       .pipe(switchMap((id: string): ObservableInput<any>=>{
@@ -49,14 +49,9 @@ export class SongDetailComponent implements OnInit {
       })
     }
   ngOnInit(): void{ 
-    
   }
 
   played(event: Plyr.PlyrEvent) {
     console.log('played', event);
-  }
-
-  goToSong(id:string): void{
-      this.router.navigateByUrl(`/song/${id}`);
   }
 }
