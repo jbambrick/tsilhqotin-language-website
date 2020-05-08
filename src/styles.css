@@ -98,3 +98,10 @@ ul.p {
       opacity:1;
     }
 }
+
+@media (max-width: 1200px) {
+  #content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
