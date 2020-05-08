@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { INavbarItem } from '../interfaces/interfaces';
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +10,21 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export class NavbarComponent implements OnInit {
 
-  isMenuCollapsed: boolean = true; // Haburger menu collapsed initially
-  isDropdownCollapsed: boolean = true; // 'More' dropdown collapsed initially
+  public isMenuCollapsed: boolean = true; // Haburger menu collapsed initially
+  public isDropdownCollapsed: boolean = true; // 'More' dropdown collapsed initially
+  public navbarItems: INavbarItem[] = [
+    // {name:"radio", routerLink:"/radio", display:"104.5"}, //insert this one manually for unique style
+    {name:"dialect", routerLink:"/dialect", display:"Dialect"},
+    {name:"songs", routerLink:"/songs", display:"Songs"},
+    {name:"videos", routerLink:"/videos", display:"Videos"},
+    {name:"apps", routerLink:"/apps", display:"Apps"},
+    {name:"links", routerLink:"/links", display:"Links"}
+  ];
+  public moreNavbarItems: INavbarItem[] = [
+    {name:"teachers", routerLink:"/teachers", display:"Teachers"},
+    {name:"funders", routerLink:"/funders", display:"Funders"},
+    {name:"contact", routerLink:"/contact", display:"Contact"}
+  ];
 
   constructor() { }
 

@@ -6,40 +6,27 @@
     </button>
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto" style="align-items: center; width: auto;">
- 
         <li class="nav-item">
           <a class="nav-link" routerLink="/radio"><button class="w3-btn w3-black">
             <h5 style="font-size: 23px;">Tŝilhqot’in Radio 104.5 FM</h5>
           </button>
         </a>
         </li>
-
-        <li class="nav-item" (click)="navbarItemClick()">
-          <a class="nav-link"  routerLink="/dialect"><button class="w3-btn w3-black">Dialect</button></a>
-        </li>
-        <li class="nav-item" (click)="navbarItemClick()">
-          <a routerLink="/songs"><button class="w3-btn w3-black">Songs</button></a>
-        </li>
-        <li class="nav-item" (click)="navbarItemClick()">
-          <a routerLink="/videos"><button class="w3-btn w3-black">Videos</button></a>
-        </li>
-        <li class="nav-item" (click)="navbarItemClick()">
-          <a routerLink="/apps"><button class="w3-btn w3-black">Apps</button></a>
-        </li>
-        <li class="nav-item" (click)="navbarItemClick()">
-          <a routerLink="/links"><button class="w3-btn w3-black">Links</button></a>
-        </li>
-     
-          <div class="dropdown">
-            <button type="button" class="button dropdown-toggle" (click)="toggleDropdown()">
-              More
+        <li *ngFor="let item of navbarItems" (click)="navbarItemClick()" id="{{ item.name }}" class="nav-item">
+          <a class="nav-link" routerLink="{{ item.routerLink }}">
+            <button class="w3-btn w3-black">
+              {{ item.display }}
             </button>
-            <div [ngbCollapse]="isDropdownCollapsed" class="dropdown-menu" style="background-color: white;">
-              <a class="dropdown-item" routerLink="/teachers" (click)="dropdownItemClick()">Teachers</a>
-              <a class="dropdown-item"  routerLink="/funders" (click)="dropdownItemClick()">Funders</a>
-              <a class="dropdown-item"  routerLink="/contact" (click)="dropdownItemClick()">Contact</a>
-            </div>
+          </a>
+        </li>     
+        <div class="dropdown">
+          <button type="button" class="button dropdown-toggle" (click)="toggleDropdown()">
+            More
+          </button>
+          <div [ngbCollapse]="isDropdownCollapsed" class="dropdown-menu" style="background-color: white;">
+            <a *ngFor="let item of moreNavbarItems" class="dropdown-item" id="{{ item.name }}" routerLink="{{ item.routerLink }}" (click)="dropdownItemClick()">{{ item.display }}</a>
           </div>
+        </div>
       </ul>
     </div>
   </div>
