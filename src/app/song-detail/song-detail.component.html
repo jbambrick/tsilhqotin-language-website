@@ -5,5 +5,6 @@
         <div plyr style="width: 300px" plyrTitle="Audio" plyrType="audio" [plyrPlaysInline]="true" [plyrCrossOrigin]="true" [plyrSources]="audioSources"></div>
         <h2>Lyrics</h2>
         <p>{{ song.lyrics }}</p>
+        <div [style.display]="'none'">{{ audioSources[0].src }}</div>
     </div>
 </div>
