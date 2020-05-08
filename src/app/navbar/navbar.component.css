@@ -53,10 +53,29 @@ button:hover {
     box-shadow: 4px 4px 4px 4px rgba(.3, .3, .3, 0.3), 6px 6px 20px 6px rgba(.3, .3, 0.3, 0.3);
 }
 
-@media (max-width: 992px) {
-
-}
-
 @media (max-width: 768px) {
 
 }
+
+@media (max-width: 1200px) {
+    #navbarResponsive {
+        background: linear-gradient( rgba(158, 0, 0, 0.5), rgba(158, 0, 0, 0.5) ),url(src\assets\tsilhqotin_language_lake.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-backdrop-filter: blur(15px) brightness(65%);
+        backdrop-filter: blur(15px) brightness(65%);
+    }
+
+    button {
+        height: 70px;
+    }
+
+    button:hover {
+        transform: scale(0) translate();
+        box-shadow: none;
+    }
+
+}
+
