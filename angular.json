@@ -121,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tsilhqotin-language-website"
+    }
+  },
+  "defaultProject": "tsilhqotin-language-website",
+  "cli": {
+    "analytics": false
+  }
 }
