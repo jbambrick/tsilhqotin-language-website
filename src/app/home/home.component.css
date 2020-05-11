@@ -20,3 +20,9 @@
 p {
     font-size: x-large;
 }
+
+@media (max-width: 726px) {
+    .container {
+        width: 100%;
+    }
+  }
