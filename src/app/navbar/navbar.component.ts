@@ -42,6 +42,7 @@ export class NavbarComponent implements OnInit {
   public navbarItemClick(){
     console.log(`Navbar item clicked`);
     this.isMenuCollapsed = true;
+    if(!this.isDropdownCollapsed) this.isDropdownCollapsed = true; // collapse dropdown if navbar item is clicked
   }
 
   public dropdownItemClick(){
