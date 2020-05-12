@@ -59,7 +59,7 @@ button:hover {
 
 @media (max-width: 1200px) {
     #navbarResponsive {
-        background: linear-gradient( rgba(1, 0, 83, 0.719), rgba(1, 0, 83, 0.719) ),url(src\assets\tsilhqotin_language_lake.jpg) no-repeat center center fixed;
+        background: linear-gradient( rgba(1, 0, 83, 0.719), rgba(1, 0, 83, 0.719) ),url('https://datsan.openbroadcaster.pro/download.php?media_id=3035') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
