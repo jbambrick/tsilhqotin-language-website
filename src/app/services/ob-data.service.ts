@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ObDataService {
 
-  openBrodcasterURL: string = "https://datsan.openbroadcaster.pro/";
-  openBroadcasterAPIURL: string = `${this.openBrodcasterURL}tools/stream/api.php`;
-  openBroadcasterDownloadURL: string = `${this.openBrodcasterURL}tools/download.php`;
+  private openBrodcasterURL: string = "https://datsan.openbroadcaster.pro/";
+  private openBroadcasterAPIURL: string = `${this.openBrodcasterURL}tools/stream/api.php`;
+  private openBroadcasterDownloadURL: string = `${this.openBrodcasterURL}tools/download.php`;
+  private icecastURL: string = "http://datsan.openbroadcaster.pro:8000/datsan";
 
   private genre: object = {
     "kids-songs":3207,
@@ -44,6 +46,26 @@ export class ObDataService {
         return item.id === id;
       });
     }));
+  }
+
+  public getIcecastStream(){
+    return this.http.get(this.icecastURL, {responseType: "arraybuffer"});
+  }
+
+  public async pipeStreamToBuffer(sourceBuffer) {
+    console.log(`Piping stream to buffer`);
+    const fetchedResource = await fetch(this.icecastURL);
+    const reader = await fetchedResource.body.getReader();
+
+    reader.read().then(function processText({ done, value }) {
+      if (done) {
+        console.log('Stream finished. Content received:');
+        return;
+      }
+      sourceBuffer.appendBuffer(value);
+      return reader.read().then(processText);
+    });
+    
   }
 
 }
