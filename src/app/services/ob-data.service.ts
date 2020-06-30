@@ -48,24 +48,8 @@ export class ObDataService {
     }));
   }
 
-  public getIcecastStream(){
-    return this.http.get(this.icecastURL, {responseType: "arraybuffer"});
-  }
-
-  public async pipeStreamToBuffer(sourceBuffer) {
-    console.log(`Piping stream to buffer`);
-    const fetchedResource = await fetch(this.icecastURL);
-    const reader = await fetchedResource.body.getReader();
-
-    reader.read().then(function processText({ done, value }) {
-      if (done) {
-        console.log('Stream finished. Content received:');
-        return;
-      }
-      sourceBuffer.appendBuffer(value);
-      return reader.read().then(processText);
-    });
-    
+  public getIcecastURL(){
+    return this.icecastURL
   }
 
 }

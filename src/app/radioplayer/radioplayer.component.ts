@@ -11,11 +11,8 @@ import { from, fromEvent } from 'rxjs';
 export class RadioplayerComponent implements OnInit {
   @ViewChild('player') playerReference: ElementRef;
 
-  mimeCodec: string = "audio/mpeg";
   mediaSource: MediaSource = new MediaSource();
-  sourceBuffer: SourceBuffer;
-  readyState: boolean;
-  stream$: any;
+  icecastURL: string;
 
   constructor(private obdata: ObDataService, private renderer: Renderer2) { }
 
@@ -23,28 +20,7 @@ export class RadioplayerComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    // var sourceBuffer = this.mediaSource.addSourceBuffer(this.mimeCodec);
-    this.obdata.pipeStreamToBuffer(sourceBuffer);
-    console.log(`On init fired.`);
-    this.renderer.setProperty(this.playerReference.nativeElement, 'src', URL.createObjectURL(this.mediaSource));
-    this.stream$ = fromEvent<any>(this.playerReference.nativeElement,'sourceopen');
-    // this.playerReference.nativeElement.src = URL.createObjectURL(this.mediaSource);
-    this.stream$.subscribe(_=>{
-    console.log(`this.readyState = ${this.readyState}`); // open
-    var sourceBuffer = this.mediaSource.addSourceBuffer(this.mimeCodec);
-    this.obdata.pipeStreamToBuffer(sourceBuffer);
-    })
+    this.icecastURL = this.obdata.getIcecastURL();
+    this.renderer.setProperty(this.playerReference.nativeElement, 'src', this.icecastURL);
   }
-/*
-  sourceOpen(_){
-    console.log(`this.readyState = ${this.readyState}`); // open
-    var sourceBuffer = this.mediaSource.addSourceBuffer(this.mimeCodec);
-    this.obdata.pipeStreamToBuffer(sourceBuffer);
-  } */
-
-  pipeStream(buf){
-    console.log(`Checking mediaSource.state: ${this.mediaSource.readyState}`);
-      this.sourceBuffer ? this.sourceBuffer.appendBuffer(buf) : console.error("Streaming failed: sourceBuffer does not exist.");
-  }
-
 }
