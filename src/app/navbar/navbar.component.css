@@ -2,14 +2,16 @@
     margin-left: 25px;
 }
 
+.active, .btn {
+    color: greenyellow;
+}
+
 .navbar {
-    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.384);
+    box-shadow: 0 9px 9px 0 rgba(32, 32, 32, 0.726), 0 6px 20px 10px rgba(0, 0, 0, 0.384);
     display: block;
     color: white;
     padding: 0px;
-    background-color: rgba(4, 4, 100, 0.301);
-    -webkit-backdrop-filter: blur(15px) brightness(65%);
-    backdrop-filter: blur(15px) brightness(65%);
+    background: url("/assets/images/unnamed.jpg");
     position: fixed;
     width: 100%;
 }
@@ -44,7 +46,7 @@ button {
     font-weight: 500;
     height: 100px;
     width: 120px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 button:hover {
