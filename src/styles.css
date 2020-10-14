@@ -18,15 +18,15 @@ body {
 #heading {
   background-image: url(~/assets/images/xeni.jpg);
   background-position: no-repeat center center fixed;
-  background-color: rgba(255, 255, 255, 0.555);
-    background-blend-mode: lighten;
+  background-color: rgba(236, 236, 236, 0.568);
+    background-blend-mode: hue;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
-
 }
+
 
 #content {
     position: absolute;
@@ -45,23 +45,24 @@ body {
 }
 
 #inner {
-  padding: 20px;
-  margin-left: 85px;
-  margin-right: 85px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   background: rgb(248, 248, 248);
   box-shadow: 0px 0px 55px 5px rgb(143, 143, 143);
   min-height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 h1 {
     padding-bottom: 35px;
     padding-top: 50px;
     color: rgb(2, 0, 117);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/*
 #linkspage, #containers {
     animation: fadeIn ease 1.5s;
     -webkit-animation: fadeIn ease 1.5s;
@@ -69,6 +70,7 @@ h1 {
     -o-animation: fadeIn ease 1.5s;
     -ms-animation: fadeIn ease 1.5s;
 }
+*/
 
 ul.p {
   list-style-type: circle;
