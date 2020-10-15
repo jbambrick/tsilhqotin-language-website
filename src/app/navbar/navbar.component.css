@@ -11,7 +11,7 @@
     display: block;
     color: white;
     padding: 0px;
-    background: url("/assets/images/unnamed.jpg");
+    background: url("/assets/images/unnamed.jpg") center;
     position: fixed;
     width: 100%;
 }

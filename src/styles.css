@@ -18,8 +18,8 @@ body {
 #heading {
   background-image: url(~/assets/images/xeni.jpg);
   background-position: no-repeat center center fixed;
-  background-color: rgba(236, 236, 236, 0.568);
-    background-blend-mode: hue;
+  background-color: rgba(216, 216, 216, 0.753);
+    background-blend-mode: lighten;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -36,10 +36,10 @@ body {
     right: 0;
     overflow: auto;
     font-size: 16px;
-    padding-left: 100px;
-    padding-right: 100px;
-    color: rgba(1, 0, 83, 0.719);
-    background-color: rgb(209, 209, 209); /* For browsers that do not support gradients */
+    padding-left: 150px;
+    padding-right: 150px;
+    color: rgba(248, 248, 248, 0.719);
+    background-color: rgb(138, 138, 138); /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, white, rgb(180, 180, 180), white);
     margin-bottom: 65px;
 }
@@ -48,7 +48,7 @@ body {
   padding: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  background: rgb(248, 248, 248);
+  background: rgb(20, 26, 107);
   box-shadow: 0px 0px 55px 5px rgb(143, 143, 143);
   min-height: 100%;
   padding-left: 5px;
@@ -58,8 +58,13 @@ body {
 h1 {
     padding-bottom: 35px;
     padding-top: 50px;
-    color: rgb(2, 0, 117);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading {
+  color: red;
+  -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
 }
 
 /*

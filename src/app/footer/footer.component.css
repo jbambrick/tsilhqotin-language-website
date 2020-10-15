@@ -10,12 +10,12 @@
     font-weight: 80;
     font-size: 20px;
     height: 65px;
-    background-color: grey;
-    background-image: linear-gradient(rgb(206, 206, 206), white);
+    background: url("/assets/images/unnamed.jpg") center;
+
     box-shadow: 0 -5px 5px -5px #333;
     z-index: 10;
     padding-right: 25px;
-    border-top: rgb(2, 0, 117) 5px solid;
+    border-top: rgb(0, 0, 0) 5px solid;
   }
   
   p {
