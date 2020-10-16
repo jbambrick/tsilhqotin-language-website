@@ -1,10 +1,14 @@
 <div class="container">
     <div id="content">
+        <div id="inner">
+            <div id="heading">
         <h1>{{ video.title }}</h1>
+            </div>
         <h2>performed by {{ video.performer }}</h2>
         <div plyr style="width: 300px" plyrTitle="Video" plyrType="video" [plyrPlaysInline]="true" [plyrCrossOrigin]="true" [plyrSources]="videoSources"></div>
         <p>{{ video.lyrics }}</p>
         <div [style.display]="'none'">{{ videoSources[0].src }}</div>
+        </div>
     </div>
 </div>
 
