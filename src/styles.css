@@ -68,6 +68,8 @@ h1 {
   color: red;
   -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
+
+        margin: 0 auto;
 }
 
 /*
@@ -82,51 +84,6 @@ h1 {
 
 ul.p {
   list-style-type: circle;
-}
-
-@keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
 }
 
 @media (max-width: 1200px) {
