@@ -11,7 +11,7 @@
     font-size: 20px;
     height: 65px;
     background: url("/assets/images/unnamed.jpg") center;
-
+    text-align: center;
     box-shadow: 0 -5px 5px -5px #333;
     z-index: 10;
     padding-right: 25px;
@@ -52,3 +52,9 @@
       background-color: color;
     }
     
+
+    @media screen and (max-width: 1200px) {
+      #copyright {
+        display: none;
+      }
+    }
