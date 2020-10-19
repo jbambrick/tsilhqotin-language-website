@@ -6,6 +6,8 @@
     color: greenyellow;
 }
 
+
+
 .navbar {
     box-shadow: 0 9px 9px 0 rgba(32, 32, 32, 0.726), 0 6px 20px 10px rgba(0, 0, 0, 0.384);
     display: block;
@@ -81,3 +83,8 @@ button:hover {
 
 }
 
+@media (max-width: 768px) {
+    #tng {
+        font-size: smaller;
+    }
+}
