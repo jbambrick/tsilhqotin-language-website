@@ -64,7 +64,7 @@ button:hover {
 @media (max-width: 1200px) {
     #navbarResponsive {
         background: inherit;
-        padding-bottom: 5px;
+        padding-bottom: 0px;
     }
 
     button {
@@ -82,4 +82,8 @@ button:hover {
     #tng {
         font-size: smaller;
     }
+    #radiobutton {
+        padding-bottom: 15px;
+    }
+
 }
