@@ -1,111 +1,32 @@
-.box-outer {
-    overflow: hidden;
-
-	width: 800px;
-	height: 100px;
-    background: url("/assets/images/unnamed.jpg");
+#container {
+    position: relative;
+    -webkit-backdrop-filter: grayscale(90%);
+    backdrop-filter: grayscale(90%);
+    width: 100%;
+    height: fit-content;
+	border-style: none;
+	padding: 45px;
+    color: rgb(5, 0, 80);
+	background-color: rgba(255, 255, 255, 0.753);
     text-align: center;
-    box-shadow: 0 9px 9px 0 rgba(32, 32, 32, 0.726), 0 6px 20px 10px rgba(0, 0, 0, 0.384);
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.384);
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
-.content {
-    text-align: center;
-    
+h2 {
+color: red;
+-webkit-text-stroke-width: 1px;
+	  -webkit-text-stroke-color: black;
+	  font-weight: 700;
 }
 p {
-    font-size: x-large;
+    font-size: 22px;
 }
-
 @media (max-width: 726px) {
     .container {
         width: 100%;
     }
   }
-	
-
-.main_box {
-	width: 800px;
-	height: 100px;
-	position: relative;
-	border: 5px solid #000;
-}
-.bar {
-	position: absolute;
-	width: 50px;
-	height: 5px;
-	background: #fff;
-	transition: all 1s linear;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-iteration-count: finite;
-	animation-iteration-count: finite;
-}
-.bar.delay {
-	animation-delay: 0.5s;
-	-webkit-animation-delay: 0.5s;
-}
-.top {
-	top: -5px;
-	left: -5px;
-}
-.right {
-	top: 18px;
-	right: -28px;
-	transform: rotate(90deg);
-}
-.bottom {
-	bottom: -5px;
-	left: -5px;
-}
-.left {
-	top: 18px;
-	left: -28px;
-	transform: rotate(90deg);
-}
- @-webkit-keyframes h-move {
- 0% {
-left: -5px;
-}
-100% {
-left: 800px;
-}
-}
- @keyframes h-move {
- 0% {
-left: -5px;
-}
-100% {
-left: 800px;
-}
-}
-.top, .bottom {
-	-webkit-animation-name: h-move;
-	animation-name: h-move;
-}
- @-webkit-keyframes v-move {
-0% {
-top: -5px;
-}
-100% {
-top:228px;
-}
-}
- @keyframes v-move {
- 0% {
-top: -5px;
-}
-100% {
-top:228px;
-}
-}
-.right, .left {
-	-webkit-animation-name: v-move;
-	animation-name: v-move;
-}

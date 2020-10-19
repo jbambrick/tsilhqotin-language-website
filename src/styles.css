@@ -18,12 +18,20 @@ body {
 #heading {
   background-image: url(~/assets/images/xeni.jpg);
   background-position: no-repeat center center fixed;
-  background-color: rgba(216, 216, 216, 0.753);
-    background-blend-mode: lighten;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#container {
+  width: 100%;
+
+  -webkit-backdrop-filter: grayscale(90%);
+  backdrop-filter: grayscale(90%);
+
+background-color: rgba(255, 255, 255, 0.753);
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.384);
 
 }
 
@@ -51,7 +59,7 @@ h2 {
   padding: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  background: rgb(20, 26, 107);
+  background: rgb(0, 1, 80);
   box-shadow: 0px 0px 55px 5px rgb(143, 143, 143);
   min-height: 100%;
   padding-left: 5px;
@@ -67,9 +75,7 @@ h1 {
 #heading {
   color: red;
   -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-
-        margin: 0 auto;
+  -webkit-text-stroke-color: black;     margin: 0 auto;
 }
 
 /*

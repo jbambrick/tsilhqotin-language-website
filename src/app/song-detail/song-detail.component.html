@@ -2,7 +2,9 @@
     <div id="content">
         <div id="inner">
             <div id="heading">
-        <h1>{{ song.title }}</h1>
+                <div id="container">
+                    <h1>{{ song.title }}</h1>
+                </div>
             </div>
         <h2>performed by {{ song.performer }}</h2>
         <div plyr style="width: 300px" plyrTitle="Audio" plyrType="audio" [plyrPlaysInline]="true" [plyrCrossOrigin]="true" [plyrSources]="audioSources"></div>
