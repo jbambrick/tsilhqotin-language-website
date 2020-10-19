@@ -64,12 +64,7 @@ button:hover {
 @media (max-width: 1200px) {
     #navbarResponsive {
         background: inherit;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        -webkit-backdrop-filter: blur(15px) brightness(65%);
-        backdrop-filter: blur(15px) brightness(65%);
+        padding-bottom: 5px;
     }
 
     button {
