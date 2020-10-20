@@ -10,12 +10,12 @@ ul.p {
   list-style-type: circle;
 }
 
-h3 {
+h2 {
   text-align: center;
   padding-bottom: 20px;
 }
 
-h4 {
+h3 {
   color: white;
 }
 
@@ -42,8 +42,8 @@ h4 {
 }
 
 @media (max-width: 768px) {
-  p,li,h4,h3,.a,h1,h2 {
-    font-size: small;
+  h3 {
+    font-size: medium;
   }
 
 }

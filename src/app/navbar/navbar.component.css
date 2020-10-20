@@ -80,7 +80,7 @@ button:hover {
 
 @media (max-width: 768px) {
     #tng {
-        font-size: smaller;
+        font-size: 12px;
     }
     #radiobutton {
         padding-bottom: 15px;
