@@ -109,3 +109,8 @@ ul.p {
     margin: 0;
   }
 }
+@media (max-width: 768px) {
+  h1,p,li,h4,h3,.a {
+    font-size: small;
+  }
+}

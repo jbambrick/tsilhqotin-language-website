@@ -42,7 +42,7 @@ h4 {
 }
 
 @media (max-width: 768px) {
-  p,li,h4,h3,.a {
+  p,li,h4,h3,.a,h1,h2 {
     font-size: small;
   }
 
