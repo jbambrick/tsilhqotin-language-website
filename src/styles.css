@@ -76,9 +76,8 @@ h1 {
 }
 
 #heading {
-  color: red;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;     margin: 0 auto;
+  color: #f12029;
+
 }
 
 /*

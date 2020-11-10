@@ -17,9 +17,8 @@
     transform: translate(-50%, -50%);
 }
 h2 {
-color: red;
--webkit-text-stroke-width: 1px;
-	  -webkit-text-stroke-color: black;
+color: #f12029;
+
 	  font-weight: 700;
 }
 p {
