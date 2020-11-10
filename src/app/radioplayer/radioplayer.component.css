@@ -1,5 +1,5 @@
   h1 {
-    color: white;
+    color: rgba(1, 0, 83, 0.719);
     font-family: Arial, Helvetica, sans-serif;
    }
 
@@ -12,3 +12,8 @@
     font-size: 28px;
    }
 
+   @media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+  }

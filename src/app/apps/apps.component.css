@@ -1,31 +1,25 @@
-.content {
-    display: inline-block;
-    background-color: rgba(4, 4, 100, 0.301);
-    -webkit-backdrop-filter: blur(1px) brightness(55%);
-    backdrop-filter: blur(1px) brightness(55%);
-} 
+
 
 ul.p {
   list-style-type: circle;
 }
 
-li {
-  margin-left: 40px;
+
+.card {
+  background: inherit;
+  border-top: solid 1px white;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.glow {
-  color: #fff;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+h5 {
+  color: rgb(255, 255, 255);
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+
+@media (max-width: 768px) {
+  .card {
+    margin-top: 0;
+    width: 90%;
   }
 }

@@ -5,3 +5,13 @@
 ul.p {
   list-style-type: circle;
 }
+
+h2 {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  p,li,h4,h3,.a {
+    font-size: small;
+  }
+}
